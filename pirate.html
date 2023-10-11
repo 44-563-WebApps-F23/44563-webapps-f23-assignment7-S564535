@@ -26,9 +26,7 @@
             margin-top: 50px;
          }
 
-        #locations,
-        #penalty,
-        #help,
+        #help,#penalty,#locations,
         #click {
             font-size: 18px;
             font-weight: bold;
@@ -120,7 +118,7 @@
           var trapLocation = 18;
           var gameOver = false;
   
-          function check(position) {
+        function check(position) {
         if (gameOver) return;
 
         const id = ids[position];
