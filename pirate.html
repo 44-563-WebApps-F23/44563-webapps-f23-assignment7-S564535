@@ -171,25 +171,6 @@
         document.getElementById("penalty").textContent = "Penalty is : " + penalty;
     }
 
-    function newGame(){
-        checkCount = 0;
-        penalty = 0;
-        lastCheck = 0;
-        gameOver = false;
-
-        treasureLocation = Math.floor(Math.random() * 25);
-        do {
-            trapLocation = Math.floor(Math.random() * 25);
-        } while (trapLocation === treasureLocation);
-      }
-        document.getElementById("locations").innerHTML = "Number of locations checked is : " + checkCount;
-        document.getElementById("penalty").innerHTML = "Penalty is : " + penalty;
-        document.getElementById("help").innerHTML = "Help report";
-
-    for (var i = 0; i < 25; i++) {
-            document.getElementById(ids[i]).src = "Image1.jpg"
-        }
-
 </script>
 
 </body>
